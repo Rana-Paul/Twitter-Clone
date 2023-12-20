@@ -1,0 +1,32 @@
+version: "3"
+services:
+  front:
+    build:
+      context: "./client"
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    container_name: client-container
+    stdin_open: true
+    tty: true
+    networks:
+      - mern-stack-network
+    volumes:
+      - ./client:/app
+    depends_on:
+      - backend
+  backend:
+    build:
+      context: "./server"
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 8000:8000
+    container_name: server-container
+    networks:
+      - mern-stack-network
+    volumes:
+      - ./server:/app
+
+networks:
+  mern-stack-network:
