@@ -123,7 +123,7 @@ const Twitterlayout: React.FC<TwitterLayoutProps> = (props) => {
       ) : (
         <div className="flex w-full md:w-[90%]  justify-center lg:w-[85%] ">
           {/* left */}
-          <div className=" w-[20%] sm:w-[20%] h-screen sm:block flex px-2  sm:justify-normal justify-center">
+          <div className=" w-[20%] sm:w-[20%] h-screen sm:block flex px-2 sm:justify-normal justify-center">
             <div >
               <div >
                 <BsTwitter className="hidden mb-1 sm:block sm:justify-normal justify-center text-5xl mt-2 pl-3 hover:text-blue-500 cursor-pointer" />
@@ -171,7 +171,7 @@ const Twitterlayout: React.FC<TwitterLayoutProps> = (props) => {
             </div>
           </div>
           {/* Mid */}
-          <div className=" w-[90%] sm:w-[80%] md:w-[60%] h-screen border border-t-0 border-b-0 border-slate-700">
+          <div className=" w-[90%] sm:w-[80%] md:w-[60%] lg:w-[50%] h-screen overflow-y-scroll no-scrollbar  border border-t-0 border-b-0 border-slate-700">
             {props.children}
           </div>
           {/* right */}

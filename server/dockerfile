@@ -20,7 +20,7 @@ RUN npm install
 COPY . .
 
 # Build your Prisma schema and generate Prisma client
-RUN npx prisma generate
+RUN npx prisma migrate dev
 
 
 # Expose the port that your server will run on (adjust as needed)
