@@ -1,7 +1,7 @@
 
 # Full Stack Twitter Clone
 
-This is Full Stack Twitter Clone. Built with the Next.js 13, GraphQL, TypeScript,Tailwind, PostgreSQL
+This is Full Stack Twitter Clone. Built with the Next.js 13, GraphQL, Redis, TypeScript,Tailwind, PostgreSQL
 
 ## Getting Started
 To get a local copy up and running, please follow these simple steps.
